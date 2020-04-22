@@ -15,7 +15,7 @@ export default class Board extends Array {
   // tutaj tworzycie nowe obiekty waszych bierek i od razu umieszczacie je na szachownicy
   createAndSetKings(side) {
     const row = side === "white" ? 7 : 0;
-    this[row][2] = new King(row, 2, side);
+    this[row][1] = new King(row, 1, side);
   }
 
   createAndSetBishops(side) {
