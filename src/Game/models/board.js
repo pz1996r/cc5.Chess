@@ -40,7 +40,6 @@ export default class Board extends Array {
     for (let i = 0; i < this[row].length; i++) {
       this[row][i] = new Pawn(row, i, side);
     }
-    this[6][6] = new Pawn(6, 6, "black");
   }
 
   createAndSetRooks(side) {
